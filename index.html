@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PUFCIK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    div img {
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        width: 100%;
+    }
+
+    #room {
+        position: fixed;
+        z-index: -1;
+    }
+
+    #screen {
+    }
+
+    #title {
+        align-items: center;
+        box-sizing: border-box;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Teko, sans-serif;
+        font-weight: 400;
+        gap: 5rem;
+        justify-content: center;
+        letter-spacing: .6rem;
+        line-height: .7;
+        padding: 10vh 10vw;
+        text-align: center;
+        text-shadow:
+            red 2px 2px,
+            green 2px -2px,
+            blue -2px 2px;
+        text-transform: uppercase;
+    }
+
+    #title span { z-index: 1 }
+    #title span:first-of-type { font-size: 3rem; }
+    #title span:last-of-type { font-size: 9rem; }
+</style>
+<body>
+    <div id="room">
+        <img src="assets/layer-1.png" />
+        <img src="assets/layer-3.png" />
+        <img src="assets/layer-4.png" />
+        <img src="assets/layer-5.png" />
+        <img src="assets/layer-6.png" />
+        <img src="assets/layer-7.png" />
+        <img src="assets/layer-9.png" />
+    </div>
+    <div id="screen">
+        <img src="assets/layer-2.png" />
+        <img src="assets/layer-10.png" style="opacity: .7" />
+        <img src="assets/layer-11.png" style="opacity: .7" />
+        <img src="assets/layer-12.png" />
+        <img src="assets/layer-13.png" />
+        <img src="assets/layer-14.png" />
+    </div>
+    <div id="title">
+        <img src="assets/layer-10.png" style="opacity: .7" />
+        <img src="assets/layer-11.png" style="opacity: .7" />
+        <span>next tuesday</span>
+        <span>Cloud Atlas</span>
+    </div>
+</body>
+</html>
